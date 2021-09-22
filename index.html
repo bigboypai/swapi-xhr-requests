@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <title>SWAPI API</title>
+</head>
+<body>
+    <header>
+        <h1>SWAPI Requests with XHR</h1>
+    </header>
+    <main>
+        <div class="main-container">
+
+            <div class="box">
+                <div class="mini-box">
+                    <span>Name: <span class="char-name"> </span></span>
+                    <span>Gender: <span class="char-gender"> </span></span>
+                    <span>Year of birth: <span class="char-birth"> </span> </span>
+                    <span>Skin color: <span class="char-skin"></span></span>
+                </div>
+                <button id="getCharacter">Request a character</button>
+            </div>
+
+            <div class="box">
+                <div class="mini-box">
+                    <span>Name: <span class="planet-name"> </span></span>
+                    <span>Climate: <span class="planet-climate"> </span></span>
+                    <span>Terrain: <span class="planet-terrain"> </span></span>
+                    <span>Rotation period: <span class="planet-rotation"> </span></span>
+                </div>
+                <button id="getPlanet">Request a planet</button>
+            </div>
+
+            <div class="box">
+                <div class="mini-box">
+                    <span>Name: <span class="starship-name"> </span></span>
+                    <span>Model: <span class="starship-model"> </span></span>
+                    <span>Manufacturer: <span class="starship-manufacturer"> </span></span>
+                    <span>Crew: <span class="starship-crew"> </span></span>
+                </div>
+                <button id="getStarship">Request a spaceship</button>
+            </div>
+        </div>
+    </main>
+
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="code.js"></script>
+</body>
+</html>

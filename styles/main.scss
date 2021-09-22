@@ -1,0 +1,130 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html {
+    font-size: 62.5%;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #222C3C;
+}
+button {
+    padding: 1rem;
+
+    font-weight: bold;
+    outline: none;
+    border: none;
+    background-color: #c78a44;
+    cursor: pointer;
+
+    &:hover {
+        transition: ease-in-out, 1s;
+        background-color: #d8b26e;
+    }
+}
+
+// header
+
+h1 {
+    font-size: 3rem;
+    text-align: center;
+    padding: 3rem;
+}
+
+// Main
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-container {
+    height: 80vh;
+    width: 75vw;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+
+    border: 1px solid #c78a44;
+}
+
+.main-container {
+    .box {
+        height: 70vh;
+        width: 20vw;
+
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: column;
+
+        background-color: #3b4b64;
+        border: 1px solid black;
+    }
+
+    .mini-box {
+        height: 45vh;
+        width: 15vw;
+
+        display: flex;
+        justify-content: space-evenly;
+        align-items: flex-start;
+        flex-direction: column;
+
+        border: 1px solid #c78a44;
+
+        font-size: 1.5rem;
+        padding: 2rem;
+    }
+}
+
+// Responsive flex-wrap from the boxes inside the main container
+
+@media (max-width: 458px) {
+    .main-container {
+
+        .box {
+            height: 25vh;
+            width: 70vw;
+        }
+
+        .mini-box {
+            height: 20vh;
+            width: 45vw;
+    
+            border: 1px solid black;
+
+            display: flex;
+        }
+    }
+
+    button {
+        padding: 0.2rem;
+    }
+}
+
+@media (max-width: 1024px) {
+    .main-container {
+
+        .box {
+            height: 25vh;
+            width: 60vw;
+        }
+
+        .mini-box {
+            height: 20vh;
+            width: 45vw;
+    
+            border: 1px solid black;
+
+            display: flex;
+        }
+    }
+
+    button {
+        padding: 0.2rem;
+    }
+}
